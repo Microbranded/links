@@ -10,18 +10,20 @@
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     html, body { background: #0a0a0a; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; min-height: 100vh; }
     body { display: flex; flex-direction: column; align-items: center; padding: 48px 20px 64px; max-width: 100%; }
-    .avatar { width: 88px; height: 88px; border-radius: 50%; background: linear-gradient(135deg, #ff6b6b, #ee5a6f, #c44569); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 36px; letter-spacing: -1px; margin-bottom: 16px; box-shadow: 0 8px 32px rgba(196, 69, 105, 0.3); }
+    .avatar { width: 96px; height: 96px; border-radius: 22px; overflow: hidden; margin-bottom: 16px; box-shadow: 0 8px 32px rgba(255, 122, 0, 0.25); }
+    .avatar svg { display: block; width: 100%; height: 100%; }
     h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
     .tagline { font-size: 14px; color: #888; margin-bottom: 36px; }
     .links { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
     .link { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-radius: 14px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #fff; text-decoration: none; font-size: 16px; font-weight: 600; transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease; }
     .link:hover, .link:active { transform: scale(0.98); background: #232323; border-color: #3a3a3a; }
-    .link .icon { width: 28px; height: 28px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 7px; font-size: 14px; font-weight: 800; color: #fff; }
+    .link .icon { width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 9px; }
+    .link .icon img { width: 22px; height: 22px; display: block; }
     .link .label { flex: 1; }
     .link .arrow { color: #555; font-size: 18px; }
     .ig .icon { background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
-    .threads .icon { background: #000; border: 1px solid #333; }
-    .x .icon { background: #000; border: 1px solid #333; }
+    .threads .icon { background: #000; border: 1px solid #2a2a2a; }
+    .x .icon { background: #000; border: 1px solid #2a2a2a; }
     .linkedin .icon { background: #0a66c2; }
     .bluesky .icon { background: #1185fe; }
     .facebook .icon { background: #1877f2; }
@@ -29,37 +31,43 @@
   </style>
 </head>
 <body>
-  <div class="avatar">M</div>
+  <div class="avatar">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="MicroBranded">
+      <rect width="100" height="100" fill="#0a0a0a"/>
+      <circle cx="50" cy="50" r="38" fill="none" stroke="#ffffff" stroke-width="5"/>
+      <polygon points="40,30 72,50 40,70" fill="#ff7a00"/>
+    </svg>
+  </div>
   <h1>MicroBranded</h1>
   <p class="tagline">@microbranded</p>
   <div class="links">
     <a href="https://www.instagram.com/microbranded" class="link ig" target="_blank" rel="noopener">
-      <span class="icon">IG</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Instagram</span>
       <span class="arrow">›</span>
     </a>
     <a href="https://www.threads.com/@microbranded" class="link threads" target="_blank" rel="noopener">
-      <span class="icon">@</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/threads/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Threads</span>
       <span class="arrow">›</span>
     </a>
     <a href="https://x.com/MicroBranded" class="link x" target="_blank" rel="noopener">
-      <span class="icon">𝕏</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/x/FFFFFF" alt="" width="20" height="20"></span>
       <span class="label">X (Twitter)</span>
       <span class="arrow">›</span>
     </a>
     <a href="https://www.linkedin.com/company/microbranded" class="link linkedin" target="_blank" rel="noopener">
-      <span class="icon">in</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/linkedin/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">LinkedIn</span>
       <span class="arrow">›</span>
     </a>
     <a href="https://bsky.app/profile/microbranded.bsky.social" class="link bluesky" target="_blank" rel="noopener">
-      <span class="icon">☁</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/bluesky/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Bluesky</span>
       <span class="arrow">›</span>
     </a>
     <a href="https://www.facebook.com/MicroBranded" class="link facebook" target="_blank" rel="noopener">
-      <span class="icon">f</span>
+      <span class="icon"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Facebook</span>
       <span class="arrow">›</span>
     </a>
