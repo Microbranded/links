@@ -17,10 +17,16 @@
     .links { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
     .link { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-radius: 14px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #fff; text-decoration: none; font-size: 16px; font-weight: 600; transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease; }
     .link:hover, .link:active { transform: scale(0.98); background: #232323; border-color: #3a3a3a; }
-    .link .icon { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 9px; background: #fff; overflow: hidden; }
-    .link .icon img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+    .link .icon { width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 9px; }
+    .link .icon img { width: 22px; height: 22px; display: block; }
     .link .label { flex: 1; }
     .link .arrow { color: #555; font-size: 18px; }
+    .ig .icon { background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
+    .threads .icon { background: #000; border: 1px solid #2a2a2a; }
+    .x .icon { background: #000; border: 1px solid #2a2a2a; }
+    .linkedin .icon { background: #0a66c2; }
+    .bluesky .icon { background: #1185fe; }
+    .facebook .icon { background: #1877f2; }
     footer { margin-top: 48px; font-size: 12px; color: #444; }
   </style>
 </head>
@@ -35,33 +41,37 @@
   <h1>MicroBranded</h1>
   <p class="tagline">@microbranded</p>
   <div class="links">
-    <a href="https://www.instagram.com/microbranded" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/instagram.avif" alt="Instagram"></span>
+    <a href="https://www.instagram.com/microbranded" class="link ig" target="_blank" rel="noopener">
+      <span class="icon"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Instagram</span>
       <span class="arrow">›</span>
     </a>
-    <a href="https://www.threads.com/@microbranded" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/threads.png" alt="Threads"></span>
+    <a href="https://www.threads.com/@microbranded" class="link threads" target="_blank" rel="noopener">
+      <span class="icon"><img src="https://cdn.simpleicons.org/threads/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Threads</span>
       <span class="arrow">›</span>
     </a>
-    <a href="https://x.com/MicroBranded" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/x.png" alt="X"></span>
+    <a href="https://x.com/MicroBranded" class="link x" target="_blank" rel="noopener">
+      <span class="icon"><img src="https://cdn.simpleicons.org/x/FFFFFF" alt="" width="20" height="20"></span>
       <span class="label">X (Twitter)</span>
       <span class="arrow">›</span>
     </a>
-    <a href="https://www.linkedin.com/company/microbranded" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/linkedin.png" alt="LinkedIn"></span>
+    <a href="https://www.linkedin.com/company/microbranded" class="link linkedin" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="20" height="20" aria-label="LinkedIn">
+          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+        </svg>
+      </span>
       <span class="label">LinkedIn</span>
       <span class="arrow">›</span>
     </a>
-    <a href="https://bsky.app/profile/microbranded.bsky.social" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/bluesky.png" alt="Bluesky"></span>
+    <a href="https://bsky.app/profile/microbranded.bsky.social" class="link bluesky" target="_blank" rel="noopener">
+      <span class="icon"><img src="https://cdn.simpleicons.org/bluesky/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Bluesky</span>
       <span class="arrow">›</span>
     </a>
-    <a href="https://www.facebook.com/MicroBranded" class="link" target="_blank" rel="noopener">
-      <span class="icon"><img src="icons/facebook.png" alt="Facebook"></span>
+    <a href="https://www.facebook.com/MicroBranded" class="link facebook" target="_blank" rel="noopener">
+      <span class="icon"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="" width="22" height="22"></span>
       <span class="label">Facebook</span>
       <span class="arrow">›</span>
     </a>
