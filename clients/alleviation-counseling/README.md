@@ -68,7 +68,9 @@ and experiences.
    indexed yet. This is the primary CTA on the links page → currently a placeholder.
 2. **Brand kit** — her actual logo files, brand colors (hex), and fonts. No Diana/
    Alleviation assets were found in the studio's Canva or Google Drive. The links page
-   currently uses a **provisional calming teal/sage palette** and a monogram placeholder.
+   and `brand-kit.html` currently use a **provisional calming teal/sage palette** and
+   concept logo marks. See **`brand-kit.html`** for the full proposed brand + logo sheet
+   (draft direction to approve/adjust, then swap in her real logo files).
 3. **Verified contact details** and **social handles** (IG/FB/YouTube/TikTok).
 
 > Searched: Google web, LinkedIn, Psychology Today, Headway, Alignable, Nextdoor, NPI,

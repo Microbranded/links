@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alleviation Counseling Service — Brand Kit &amp; Logo Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0E4F4A;        /* Primary — Deep Teal */
+    --sage:#7BA697;        /* Secondary — Sage */
+    --mint:#BFE3DD;        /* Tint — Soft Mint */
+    --sand:#F4F1EA;        /* Neutral — Warm Sand */
+    --clay:#C97B5A;        /* Accent — Warm Clay */
+    --gold:#D9A441;        /* Accent — Golden Ochre */
+    --ink:#1C2B29;         /* Text — Deep Charcoal */
+    --muted:#7a8682;
+    --line:#e2ddd2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--sand);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;padding:48px 24px 80px}
+  h1,h2,h3,.serif{font-family:"Fraunces",Georgia,"Times New Roman",serif}
+
+  /* Draft banner */
+  .draft{display:flex;gap:12px;align-items:flex-start;background:#fff7ed;border:1px solid #f0d9b8;border-left:4px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:40px;font-size:13.5px;color:#6b4f1d}
+  .draft strong{color:#7a5a14}
+
+  /* Header */
+  header{text-align:center;padding:24px 0 40px;border-bottom:1px solid var(--line);margin-bottom:48px}
+  header .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:16px}
+  header h1{font-size:40px;font-weight:600;color:var(--teal);letter-spacing:-.5px}
+  header p{color:var(--muted);font-size:15px;margin-top:10px}
+
+  section{margin-bottom:64px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:24px}
+  .sec-head .num{font-family:"Fraunces",serif;font-size:14px;color:var(--clay);font-weight:600}
+  .sec-head h2{font-size:24px;color:var(--teal);font-weight:600}
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+
+  /* Logo grid */
+  .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .logo-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+  .logo-stage{height:200px;display:flex;align-items:center;justify-content:center;padding:24px}
+  .logo-stage.dark{background:var(--teal)}
+  .logo-stage.sage{background:var(--sage)}
+  .logo-stage.sand{background:var(--sand)}
+  .logo-cap{border-top:1px solid var(--line);padding:12px 18px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .logo-cap b{color:var(--ink);font-weight:600}
+  .full{grid-column:1/-1}
+
+  /* Wordmark type */
+  .wordmark{font-family:"Fraunces",serif;font-weight:600;color:var(--teal);letter-spacing:-.5px;line-height:1.05}
+
+  /* Colors */
+  .swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:760px){.swatches{grid-template-columns:repeat(2,1fr)}.logos{grid-template-columns:1fr}}
+  .swatch{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+  .chip{height:96px}
+  .swatch .meta{padding:12px 14px}
+  .swatch .name{font-weight:600;font-size:13.5px}
+  .swatch .role{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+  .swatch .val{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink);display:flex;justify-content:space-between}
+  .swatch .val span{color:var(--muted)}
+
+  /* Typography */
+  .type-row{border:1px solid var(--line);border-radius:14px;background:#fff;padding:24px 26px;margin-bottom:16px}
+  .type-row .label{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
+  .type-row .meta{font-size:12.5px;color:var(--muted);margin-top:10px}
+  .specimen-serif{font-family:"Fraunces",serif;color:var(--teal)}
+  .glyphs{font-family:"Fraunces",serif;font-size:26px;color:var(--ink);letter-spacing:1px;margin-top:6px}
+
+  /* Voice + usage */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{border:1px solid var(--line);border-radius:14px;background:#fff;padding:22px 24px}
+  .panel h3{font-size:16px;color:var(--teal);margin-bottom:12px;font-weight:600}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--mint);color:var(--teal);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:20px}
+  ul.do{list-style:none}
+  ul.do li{padding:5px 0 5px 24px;position:relative;font-size:14px}
+  ul.do li::before{position:absolute;left:0;top:5px}
+  ul.do li.y::before{content:"✓";color:var(--teal);font-weight:700}
+  ul.do li.n::before{content:"✕";color:var(--clay);font-weight:700}
+
+  footer{text-align:center;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:28px;margin-top:24px;line-height:1.7}
+  footer a{color:var(--teal);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="draft">
+    <span style="font-size:18px;line-height:1">⚠️</span>
+    <div><strong>Draft / proposed brand kit.</strong> Diana's website blocks automated access and no existing
+    Alleviation Counseling brand kit was found in the studio's Canva or Drive, so this is a <em>direction</em>
+    built from her identity — Afro-Caribbean, trauma-informed, calming, affordable, community-focused. Treat the
+    logo marks and colors as concepts to approve or adjust, then swap in her real logo files once received.</div>
+  </div>
+
+  <header>
+    <div class="eyebrow">Brand Kit &amp; Logo Sheet</div>
+    <h1>Alleviation Counseling Service</h1>
+    <p>Diana Gayle, Licensed Counselor · Germantown, MD · est. proposal v1 · 2026-06-30</p>
+  </header>
+
+  <!-- ============ LOGOS ============ -->
+  <section>
+    <div class="sec-head"><span class="num">01</span><h2>Logo Suite</h2><span class="rule"></span></div>
+    <div class="logos">
+
+      <!-- Primary badge -->
+      <div class="logo-card">
+        <div class="logo-stage sand">
+          <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-label="Primary badge">
+            <circle cx="75" cy="75" r="70" fill="#0E4F4A"/>
+            <circle cx="75" cy="75" r="60" fill="none" stroke="#BFE3DD" stroke-width="1.5"/>
+            <!-- lotus / open-hands mark -->
+            <g transform="translate(75 70)" fill="none" stroke="#BFE3DD" stroke-width="4" stroke-linecap="round">
+              <path d="M0 18 C0 -2 -16 -8 -22 -22"/>
+              <path d="M0 18 C0 -2 16 -8 22 -22"/>
+              <path d="M0 18 C0 -6 -8 -14 -10 -30"/>
+              <path d="M0 18 C0 -6 8 -14 10 -30"/>
+              <path d="M0 18 L0 -16"/>
+            </g>
+            <text x="75" y="120" font-family="Fraunces,Georgia,serif" font-size="13" letter-spacing="3" fill="#BFE3DD" text-anchor="middle">ALLEVIATION</text>
+          </svg>
+        </div>
+        <div class="logo-cap"><b>Primary badge</b><span>Full color · on sand</span></div>
+      </div>
+
+      <!-- Badge reversed on teal -->
+      <div class="logo-card">
+        <div class="logo-stage dark">
+          <svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-label="Badge reversed">
+            <circle cx="75" cy="75" r="70" fill="none" stroke="#BFE3DD" stroke-width="1.5"/>
+            <g transform="translate(75 70)" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+              <path d="M0 18 C0 -2 -16 -8 -22 -22"/>
+              <path d="M0 18 C0 -2 16 -8 22 -22"/>
+              <path d="M0 18 C0 -6 -8 -14 -10 -30"/>
+              <path d="M0 18 C0 -6 8 -14 10 -30"/>
+              <path d="M0 18 L0 -16"/>
+            </g>
+            <text x="75" y="120" font-family="Fraunces,Georgia,serif" font-size="13" letter-spacing="3" fill="#ffffff" text-anchor="middle">ALLEVIATION</text>
+          </svg>
+        </div>
+        <div class="logo-cap"><b>Reversed</b><span>On deep teal</span></div>
+      </div>
+
+      <!-- Horizontal lockup -->
+      <div class="logo-card full">
+        <div class="logo-stage sand" style="height:170px">
+          <div style="display:flex;align-items:center;gap:22px">
+            <svg width="84" height="84" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-label="Mark">
+              <circle cx="75" cy="75" r="70" fill="#0E4F4A"/>
+              <g transform="translate(75 72)" fill="none" stroke="#BFE3DD" stroke-width="5" stroke-linecap="round">
+                <path d="M0 20 C0 -2 -18 -9 -25 -25"/>
+                <path d="M0 20 C0 -2 18 -9 25 -25"/>
+                <path d="M0 20 C0 -7 -9 -16 -11 -34"/>
+                <path d="M0 20 C0 -7 9 -16 11 -34"/>
+                <path d="M0 20 L0 -18"/>
+              </g>
+            </svg>
+            <div>
+              <div class="wordmark" style="font-size:30px">Alleviation</div>
+              <div style="font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:3px;color:var(--sage);text-transform:uppercase;font-weight:600;margin-top:2px">Counseling Service</div>
+            </div>
+          </div>
+        </div>
+        <div class="logo-cap"><b>Horizontal lockup</b><span>Primary use — web header, letterhead, Skool banner</span></div>
+      </div>
+
+      <!-- Monogram -->
+      <div class="logo-card">
+        <div class="logo-stage sage">
+          <svg width="120" height="120" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-label="Monogram">
+            <circle cx="75" cy="75" r="70" fill="#0E4F4A"/>
+            <text x="75" y="98" font-family="Fraunces,Georgia,serif" font-size="78" font-weight="600" fill="#fff" text-anchor="middle">A</text>
+          </svg>
+        </div>
+        <div class="logo-cap"><b>Monogram</b><span>Avatar · favicon · app icon</span></div>
+      </div>
+
+      <!-- Stacked wordmark -->
+      <div class="logo-card">
+        <div class="logo-stage sand">
+          <div style="text-align:center">
+            <div class="wordmark" style="font-size:34px">Alleviation</div>
+            <div style="font-family:'Inter',sans-serif;font-size:11px;letter-spacing:4px;color:var(--clay);text-transform:uppercase;font-weight:600;margin-top:4px">Counseling&nbsp;·&nbsp;Service</div>
+          </div>
+        </div>
+        <div class="logo-cap"><b>Stacked wordmark</b><span>Text-only contexts</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ COLOR ============ -->
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2>Color Palette</h2><span class="rule"></span></div>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#0E4F4A"></div><div class="meta"><div class="name">Deep Teal</div><div class="role">Primary · trust, calm</div><div class="val">#0E4F4A <span>14 79 74</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#7BA697"></div><div class="meta"><div class="name">Sage</div><div class="role">Secondary · growth</div><div class="val">#7BA697 <span>123 166 151</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#BFE3DD"></div><div class="meta"><div class="name">Soft Mint</div><div class="role">Tint · backgrounds</div><div class="val">#BFE3DD <span>191 227 221</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F4F1EA;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="name">Warm Sand</div><div class="role">Neutral · canvas</div><div class="val">#F4F1EA <span>244 241 234</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#C97B5A"></div><div class="meta"><div class="name">Warm Clay</div><div class="role">Accent · warmth</div><div class="val">#C97B5A <span>201 123 90</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#D9A441"></div><div class="meta"><div class="name">Golden Ochre</div><div class="role">Accent · highlight</div><div class="val">#D9A441 <span>217 164 65</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#1C2B29"></div><div class="meta"><div class="name">Deep Charcoal</div><div class="role">Text · body copy</div><div class="val">#1C2B29 <span>28 43 41</span></div></div></div>
+      <div class="swatch"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="name">White</div><div class="role">Cards · reverse</div><div class="val">#FFFFFF <span>255 255 255</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- ============ TYPOGRAPHY ============ -->
+  <section>
+    <div class="sec-head"><span class="num">03</span><h2>Typography</h2><span class="rule"></span></div>
+
+    <div class="type-row">
+      <div class="label">Display / Headings — Fraunces</div>
+      <div class="specimen-serif" style="font-size:46px;font-weight:600;line-height:1.1">Healing, made&nbsp;accessible.</div>
+      <div class="glyphs">Aa Bb Cc Dd · 1234567890 · &amp; ?</div>
+      <div class="meta">Warm, literary serif — conveys trust, care, humanity. Weights 400–700. Google Fonts (free).</div>
+    </div>
+
+    <div class="type-row">
+      <div class="label">Body / UI — Inter</div>
+      <div style="font-size:17px;max-width:640px">Diana Gayle is an Afro-Caribbean, trauma-informed counselor providing high-quality mental health care through scientifically effective treatments — at a price that keeps support within reach.</div>
+      <div style="font-family:'Inter';font-size:22px;letter-spacing:.5px;margin-top:10px">Aa Bb Cc Dd · 1234567890</div>
+      <div class="meta">Clean, highly legible sans for paragraphs, buttons, and captions. Weights 400–700.</div>
+    </div>
+  </section>
+
+  <!-- ============ VOICE + USAGE ============ -->
+  <section>
+    <div class="sec-head"><span class="num">04</span><h2>Voice &amp; Usage</h2><span class="rule"></span></div>
+    <div class="cols">
+      <div class="panel">
+        <h3>Brand keywords</h3>
+        <div class="tags">
+          <span class="tag">Calming</span><span class="tag">Trustworthy</span><span class="tag">Trauma-informed</span>
+          <span class="tag">Affordable</span><span class="tag">Culturally aware</span><span class="tag">Supportive</span>
+          <span class="tag">Hopeful</span><span class="tag">Professional</span><span class="tag">Warm</span>
+        </div>
+        <h3 style="margin-top:20px">Tone of voice</h3>
+        <p style="font-size:14px;color:var(--ink)">Gentle and reassuring, never clinical or cold. Speaks <em>to</em> the client, not down to them. Plain language, hopeful framing, and an open invitation to begin.</p>
+      </div>
+      <div class="panel">
+        <h3>Do &amp; Don't</h3>
+        <ul class="do">
+          <li class="y">Pair Deep Teal with generous Warm Sand space</li>
+          <li class="y">Use Clay / Ochre sparingly, for accents only</li>
+          <li class="y">Keep ample breathing room around the mark</li>
+          <li class="y">Maintain strong contrast for accessibility</li>
+          <li class="n">Don't stretch, recolor, or outline the logo</li>
+          <li class="n">Don't place the badge on busy photos</li>
+          <li class="n">Don't mix in unrelated bright/neon colors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Alleviation Counseling Service LLC — proposed brand direction v1<br>
+    Prepared by <a href="https://microbrandedstudio.com">MicroBranded</a> · 2026-06-30 ·
+    replace concept marks with final logo files once approved
+  </footer>
+
+</div>
+</body>
+</html>
